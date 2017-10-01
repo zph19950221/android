@@ -1,0 +1,236 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+            <!--1:线性布局
+            2：xmlns命名
+            2：布局horizontal横向，vertical纵向
+            3：高度同宽度（wrap_content）or（）-->
+            <!--1:链接图片android\test\app\src\main\res\drawable
+            2：宽度随着字体调整wrap_content or“30dp”
+            3：高度同宽度
+            4：图片显示效果https://www.2cto.com/kf/201411/348601.html-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/w1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                android:padding="0dp"
+                android:text="snoopy"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/w2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:text="Disc Jockey"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shinubi1" />
+
+            <!--1:print文字
+            2：宽度随着字体调整wrap_content or“30dp”
+            3：高度同宽度
+            4：字体大小sp
+            5：系统默认字体大小Small目前是14sp、Medium目前是18sp、Large目前是22sp
+            6：字体颜色
+            7：背景颜色
+            8：全部字母大写-->
+            <TextView
+                android:id="@+id/w3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:text="barbra streisand"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF7F00"
+                android:gravity="center"
+                android:text="Duck Sauce"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF00"
+                android:gravity="center"
+                android:text="boom"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FF00"
+                android:gravity="center"
+                android:text="Sha"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFF"
+                android:gravity="center"
+                android:text="Ka"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0000FF"
+                android:gravity="center"
+                android:text="La"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/w9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8B00FF"
+                android:gravity="center"
+                android:text="ka"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:text="点击播放" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/w10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:text="Woo"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF7F00"
+                android:gravity="center"
+                android:text="Woo"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFF00"
+                android:gravity="center"
+                android:text="Woo"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FF00"
+                android:gravity="center"
+                android:text="Woo"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFF"
+                android:gravity="center"
+                android:text="Woo"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000FF"
+                android:gravity="center"
+                android:text="Woo"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/w16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#8B00FF"
+                android:gravity="center"
+                android:text="Woo"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
