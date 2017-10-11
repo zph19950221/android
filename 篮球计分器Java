@@ -1,0 +1,58 @@
+package com.zhangpeihuan.parcticeset2;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+    int adf1 = 0;
+    int bdf2 = 0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void Adf1(View v){
+        display(adf1= adf1 + 1);
+    }
+
+    public void Adf2(View v){
+        display(adf1= adf1 + 2);
+    }
+
+    public void Adf3(View v){
+        display(adf1= adf1 + 3);
+    }
+
+    public void Bdf1(View v){
+        display2(bdf2= bdf2 + 1);
+    }
+
+    public void Bdf2(View v){
+        display2(bdf2= bdf2 + 2);
+    }
+
+    public void Bdf3(View v){
+        display2(bdf2= bdf2 + 3);
+    }
+
+    public void Rest(View v){
+        adf1 = 0;
+        bdf2 = 0;
+        display(0);
+        display2(0);
+    }
+
+    public void display(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.Adf);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void display2(int score) {
+        TextView scoreBView = (TextView) findViewById(R.id.Bdf);
+        scoreBView.setText(String.valueOf(score));
+    }
+}
